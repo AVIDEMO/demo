@@ -1,0 +1,14 @@
+{
+    "type": "contact",
+    "data": {
+        "label": "CONNECT",
+        "text": "Let\u2019s connect!",
+        "icons": [
+            { "name": "googlescholar-old", "url": "#", "label": "Google Scholar" },
+            { "name": "orcid", "url": "#", "label": "ORCID" },
+            { "name": "github", "url": "#", "label": "GitHub" },
+            { "name": "linkedin", "url": "#", "label": "LinkedIn" },
+            { "name": "mail", "url": "#", "label": "Email" }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "education",
+    "data": {
+        "label": "EDUCATION",
+        "items": [
+            {
+                "degree": "PhD Candidate in Coffee Science",
+                "institution": "Department of Coffee Science, Caffeine Tech",
+                "year": "2022 \u2014 Present",
+                "description": "Dissertation on how temperature, water pressure, and grind size affect taste and strength."
+            },
+            {
+                "degree": "MSc in Coffee Studies",
+                "institution": "",
+                "year": "Graduated 2018",
+                "description": "Thesis on how brewing methods affect coffee flavor, strength, and aroma during extraction."
+            },
+            {
+                "degree": "BSc in Coffee Culture",
+                "institution": "Cafe College",
+                "year": "Graduated 2016",
+                "description": "Studied coffee culture, caf\u00e9 experiences, and how people enjoy and share coffee in everyday life."
+            }
+        ]
+    }
+}

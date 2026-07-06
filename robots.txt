@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://avidemo.github.io/coffeebean/sitemap.xml

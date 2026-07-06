@@ -1,0 +1,26 @@
+{
+    "type": "publications",
+    "data": {
+        "label": "PUBLICATIONS",
+        "papers": [
+            {
+                "title": "The Kettle Takes Too Long: A Thermodynamic Lament",
+                "authors": "Overdrive, C. &amp; Percolator, J.",
+                "url": "#",
+                "meta": "International Symposium on Kitchen Efficiency, 2024"
+            },
+            {
+                "title": "The Kettle Takes Too Long: A Thermodynamic Lament - paper 2",
+                "authors": "Overdrive, C. &amp; Percolator, J.",
+                "url": "#",
+                "meta": "International Symposium on Kitchen Efficiency, 2024"
+            },
+            {
+                "title": "The Kettle Takes Too Long: A Thermodynamic Lament - paper add as many as you want",
+                "authors": "Overdrive, C. &amp; Percolator, J.",
+                "url": "#",
+                "meta": "International Symposium on Kitchen Efficiency, 2024"
+            }
+        ]
+    }
+}

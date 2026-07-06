@@ -1,0 +1,42 @@
+{
+    "title": "Coffee Bean",
+    "favicon": "assets/images/logo.png",
+    "description": "Coffee Bean — a PhD candidate in Coffee Science sharing thoughts on extraction kinetics, pour-over dynamics, and chocolatelogy.",
+    "cv": {
+        "enabled": true,
+        "path": "assets/cv.pdf",
+        "viewer": "pages/cv.html",
+        "mode": "view",
+        "label": "View CV"
+    },
+    "highlight_color": "#ffff00",
+    "header": {
+        "name": "Coffee Bean",
+        "subtitle": "PhD Candidate in Coffee Science",
+        "institution": "Caffeine Tech",
+        "image": "assets/images/profile/profile1x1.jpg",
+        "image_alt": "Coffee Bean"
+    },
+    "sections": [
+        {
+            "file": "data/about.json",
+            "enabled": true
+        },
+        {
+            "file": "data/education.json",
+            "enabled": true
+        },
+        {
+            "file": "data/publications.json",
+            "enabled": true
+        },
+        {
+            "file": "data/research.json",
+            "enabled": true
+        },
+        {
+            "file": "data/contact.json",
+            "enabled": true
+        }
+    ]
+}

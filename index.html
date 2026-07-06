@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+<script>
+(function(){
+    var t = 'light';
+    try { t = localStorage.getItem('theme') || 'light'; } catch(e) {}
+    document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle"></title>
+    <link id="favicon" rel="icon" type="image/png" href="assets/images/logo.png" sizes="32x32">
+    <link id="faviconShortcut" rel="shortcut icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <meta name="msapplication-TileImage" content="assets/images/logo.png">
+    <meta name="robots" content="index, follow">
+    <meta name="author" id="metaAuthor" content="">
+    <meta property="og:title" id="ogTitle" content="">
+    <meta property="og:description" id="ogDescription" content="">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" id="ogUrl" content="">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" id="canonical" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/images/profile/profile1x1.jpg" as="image" fetchpriority="high">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <script id="siteData" type="application/json">
+</script>
+    <style>
+        :root { --bg: #ffffff; --text: #111111; --text-muted: #666666; --border: #000000; --section-border: #eaeaea; --header-h: 220px; --hl-color: #ffff00; }
+        [data-theme="dark"] { --bg: #0a0a0a; --text: #f0f0f0; --text-muted: #a3a3a3; --border: #555555; --section-border: #2a2a2a; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { overflow-y: scroll; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+        .outer { max-width: 650px; margin: 0 auto; padding: 0 20px; position: relative; }
+
+        header { display: grid; grid-template-columns: 1fr 70px; gap: 30px; border-bottom: 2px solid var(--border); padding: 60px 20px 25px; align-items: flex-end; position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 999; background: var(--bg); max-width: 650px; box-sizing: border-box; transition: transform .3s ease; }
+
+        .spacer { height: var(--header-h); }
+        @media (max-width: 640px) { .spacer { height: 250px; } }
+
+        .theme-toggle { position: fixed; bottom: 24px; right: 24px; z-index: 1000; background: #000; border: none; cursor: pointer; padding: 10px; line-height: 1; display:flex;align-items:center;justify-content:center; }
+        .theme-toggle img { display:block; width:22px;height:22px; filter: brightness(0) invert(1); }
+        [data-theme="dark"] .theme-toggle { background: #fff; }
+        [data-theme="dark"] .theme-toggle img { filter: brightness(0); }
+        #cvBtn { font-family:'Inter',sans-serif; font-size:10px; text-transform:uppercase; letter-spacing:0.3px; background:#000; border:none; cursor:pointer; padding:6px 8px; color:#fff; width:100%; font-weight:600; white-space:nowrap; }
+        [data-theme="dark"] #cvBtn { background: #fff; color: #000; }
+        .theme-toggle:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+        [data-theme="dark"] .theme-icon-dark { display: none; }
+        [data-theme="light"] .theme-icon-light { display: none; }
+
+        h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.5px; }
+        h2 { font-size: 0.95rem; font-weight: 400; margin-top: 5px; }
+        
+        .passport-pic img { width: 100%; display: block; aspect-ratio:1; object-fit:cover; }
+
+        .section { border-bottom: 1px solid var(--section-border); padding-bottom: 30px; margin-bottom: 30px; }
+        .section:last-child { border-bottom: none; }
+        .section-label { font-size: 20px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); font-weight: 600; margin-bottom: 15px; display: block; }
+        .edu-block { border-top: 1px solid var(--border); padding-top: 16px; margin-bottom: 16px; }
+        .edu-block:first-child { border-top: none; padding-top: 0; }
+        .pub-block { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 16px; }
+        .pub-block:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+
+        p { font-size: 0.95rem; margin-bottom: 15px; color: var(--text); }
+        p:last-child { margin-bottom: 0; }
+        a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+        
+        [data-theme="dark"] .passport-pic img { filter: grayscale(100%) contrast(1.1); opacity: 0.9; }
+        [data-theme="dark"] .section a img { filter: brightness(0) invert(1); }
+        [data-theme="dark"] .section-media img, [data-theme="dark"] .section img[loading="lazy"] { filter: grayscale(100%); }
+
+
+        code { font-family:'Inter',monospace; font-size:0.85em; background:var(--section-border); padding:1px 4px; border-radius:2px; }
+        mark.hl { background:var(--hl-color, #ffff00); color:#000; padding:0 2px; }
+        del { text-decoration:line-through; }
+        u { text-decoration:underline; }
+        sup { font-size:0.7em; vertical-align:super; }
+        sub { font-size:0.7em; vertical-align:sub; }
+
+        ul { list-style: none; }
+        ul li { font-size: 0.95rem; margin-bottom: 8px; }
+        ul li strong { font-weight: 600; }
+        main { min-height: 600px; }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <header id="siteHeader" style="transform:translateY(0);">
+            <div>
+                <h1 id="headerName"></h1>
+                <h2 id="headerSubtitle"></h2>
+                <div id="headerInstitution" style="font-size:0.85rem;color:var(--text-muted);margin-top:2px;"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+                <div class="passport-pic">
+                    <img id="headerImage">
+                </div>
+                <button id="cvBtn"></button>
+            </div>
+        </header>
+
+        <div class="spacer"></div>
+
+        <button class="theme-toggle" data-toggle-theme aria-label="Toggle theme">
+            <img class="theme-icon-dark" src="assets/icons/system icons/dark_mode.svg" alt="Dark mode" width="22" height="22">
+            <img class="theme-icon-light" src="assets/icons/system icons/light_mode.svg" alt="Light mode" width="22" height="22">
+        </button>
+
+        <main id="app"></main>
+
+        <footer id="siteFooter" style="padding:40px 0 20px;text-align:center;font-size:9px;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);border-top:1px solid var(--section-border);margin-top:30px;min-height:120px;visibility:hidden;">
+            Designed by <a href="https://www.academicvisualsinitiative.org" target="_blank" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px;">AVI</a>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px;">CC BY-NC-SA 4.0</a>.<br>Hosted on <a href="https://github.com" target="_blank" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px;">GitHub</a>.
+        </footer>
+    </div>
+
+    <script>
+    (function(){var e=document.getElementById('siteData');if(!e)return;try{var d=JSON.parse(e.textContent),h=d.header;if(h){var n=document.getElementById('headerName');if(n)n.textContent=h.name||'';var s=document.getElementById('headerSubtitle');if(s)s.textContent=h.subtitle||'';var i=document.getElementById('headerInstitution');if(i)i.textContent=h.institution||'';var m=document.getElementById('headerImage');if(m&&h.image){m.src=h.image;m.alt=h.image_alt||'';if(h.image_width)m.width=h.image_width;if(h.image_height)m.height=h.image_height;m.fetchpriority='high'}}if(d.title)document.title=d.title;var p={},x=d.sections||[];for(var j=0;j<x.length;j++){var c=x[j];if(c.enabled!==false&&c.file)p[c.file]=fetch(c.file).then(function(r){return r.ok?r.json():null})}window.__preloaded=p}catch(ex){}})();
+    </script>
+    <script defer src="js/helpers.js"></script>
+    <script defer src="js/api.js"></script>
+    <script defer src="js/renderers.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>

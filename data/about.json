@@ -1,0 +1,15 @@
+{
+    "type": "about",
+    "data": {
+        "label": "ABOUT",
+        "paragraphs": [
+            "I am a PhD candidate in Coffee Science at {Caffeine Tech|#}, under the supervision of Dr. Percolator and Prof. French Press. My dissertation, The Science of a Better Cup: Understanding Coffee Flavor Through Roasting and Brewing, explores how different roasting and brewing methods change the taste, aroma, and quality of coffee.",
+            "My research brings together coffee chemistry, brewing science, and sensory analysis to better understand how coffee is made and enjoyed. I study how factors such as coffee beans, roasting, grinding, and brewing influence flavor and consistency.",
+            "My main goal right now is to find my favorite green coffee cup, which seems to have vanished entirely. I have a strong suspicion it is currently sitting in the back of the microwave from a previous reheating attempt.",
+            "**==This is the most basic adaptation of this template. You can implement many more including 3d models, videos, maps, images, galleries or embeded files. View the guide below.==**"
+        ],
+        "buttons": [
+            { "label": "View Guide", "url": "https://pwmguide.academicvisualsinitiative.org/", "style": "primary", "align": "left" }
+        ]
+    }
+}

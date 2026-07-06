@@ -1,0 +1,17 @@
+{
+    "type": "research",
+    "data": {
+        "label": "RESEARCH",
+        "texts": [
+            "**Primary:** Coffee Brewing, Extraction Kinetics, Flavor Chemistry",
+            "**Secondary:** Chocolate Rheology, Pour-Over Dynamics, Lab Management"
+        ],
+        "model": {
+    "src": "assets/models/model.glb",
+    "ratio": "1/1",
+    "rotate": true,
+    "caption": "Drag to interact"
+}
+
+    }
+}
