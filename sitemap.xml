@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Replace YOUR_DOMAIN with your actual domain, e.g. https://username.github.io -->
   <url>
-    <loc>https://avidemo.github.io/coffeebean/</loc>
+    <loc>https://avidemo.github.io/demo/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://avidemo.github.io/coffeebean/cv.html</loc>
+    <loc>https://avidemo.github.io/demo/cv.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
