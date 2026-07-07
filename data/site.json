@@ -35,6 +35,10 @@
             "enabled": true
         },
         {
+            "file": "data/example.json",
+            "enabled": true
+        },
+        {
             "file": "data/contact.json",
             "enabled": true
         }
